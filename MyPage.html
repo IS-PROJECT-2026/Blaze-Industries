@@ -123,10 +123,10 @@
     }
 
     .cover-photo {
-      width: 200px;
-      height: 200px;
+      width: 220px;
+      height: 220px;
       border-radius: 50%;
-      border: 2px solid rgba(255,255,255,0.12);
+      border: 2px solid rgba(255,255,255,0.16);
       background: var(--vinyl-mid);
       overflow: hidden;
       display: flex;
@@ -134,8 +134,8 @@
       align-items: center;
       justify-content: center;
       gap: 8px;
-      cursor: pointer;
       position: relative;
+      box-shadow: 0 0 0 6px rgba(155,29,32,0.22), 0 10px 26px rgba(0,0,0,0.45);
     }
 
     /* Inner groove ring around photo */
@@ -161,7 +161,10 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      object-position: center 30%;
       display: block;
+      transform: scale(1.02);
+      filter: contrast(1.03) saturate(1.04);
     }
 
     .upload-icon { opacity: 0.2; }
@@ -466,7 +469,7 @@
       body { padding: 0 0 40px; }
       .sleeve { grid-template-columns: 1fr; max-width: 500px; }
       .cover { min-height: 400px; }
-      .cover-photo { width: 150px; height: 150px; }
+      .cover-photo { width: 170px; height: 170px; }
       .liner { padding: 24px 24px 32px; }
     }
 
@@ -494,14 +497,13 @@
           Delete the svg and span below, then paste:
           <img src="images/your-photo.jpg" alt="Photo of [Your Name]">
         -->
-        <svg class="upload-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-        <span class="upload-hint">place your<br>photo here</span>
+        <img src="Blaze-Industries/MyPhoto.jpeg" alt="My Photo">
       </div>
     </div>
 
     <div class="cover-text">
-      <p class="cover-artist">[Your Full Name]</p>
-      <h1 class="cover-title">About<br><em>Me.</em></h1>
+      <p class="cover-artist">Nyabuto Daniel Obuya</p>
+      <h1 class="cover-title">A competent FullStack Developer<br><em>Me.</em></h1>
       <div class="cover-genre-row">
         <span class="genre-tag">Software</span>
         <span class="genre-tag">[Your Role]</span>
